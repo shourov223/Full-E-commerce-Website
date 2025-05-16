@@ -27,11 +27,9 @@ const Navbar = () => {
                                 <div>
                                     <img src="/Wishlist.svg" alt="icons" />
                                 </div>
-
                                 <div>
                                     <img src="/cart.svg" alt="icons" />
                                 </div>
-
                                 <div>
                                     <img src="/user.svg" alt="icons" />
                                 </div>
