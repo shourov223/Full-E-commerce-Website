@@ -1,9 +1,14 @@
+import Banner from "../components/Banner"
+import Products from "../components/Products"
+import SectionHeading from "../components/SectionHeading"
 
 
 const Home = () => {
     return (
         <>
-            <h1>this Is Home page</h1>
+            <Banner/>
+            <SectionHeading subHeading={"Today’s"} heading={"Flash Sales"} counter={true} buttons={true}/>
+            <Products />
         </>
     )
 }
