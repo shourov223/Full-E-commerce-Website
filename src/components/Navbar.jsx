@@ -44,7 +44,7 @@ const Navbar = () => {
     return (
         <>
             <nav className="py-4 border-b bg-white sticky top-0 z-50 shadow-sm">
-                <div className="container mx-auto px-4">
+                <div className="container">
                     <div className="flex justify-between items-center gap-4 lg:gap-[30px]">
                         {/* Logo */}
                         <div className="flex-shrink-0">

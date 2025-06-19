@@ -4,7 +4,6 @@ import ListItems from "./ListItems";
 import { RiFacebookLine } from "react-icons/ri";
 import { TbBrandTwitter } from "react-icons/tb";
 import { FaInstagram, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
-import { ProductsItems } from "./Products";
 
 const Footer = () => {
     return (

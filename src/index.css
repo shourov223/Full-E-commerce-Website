@@ -22,10 +22,12 @@
 
 .slick-dots {
     position: absolute;
-    bottom: 0 !important;
+    bottom: 12px !important;
     left: 50% !important;
     transform: translateX(-50%);
     z-index: 100;
+    display: flex !important;
+    gap: 12px !important;
 }
 
 .slick-dots li {
@@ -43,4 +45,25 @@
 .slick-dots li.slick-active {
     background: #DB4444 !important;
     border: 2px solid white !important;
+}
+/* flash-sales */
+#flash-sales .arrow{
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+#flash-sales .arrow.prev-arrow{
+    right: 80px;
+    top: -70px;
+}
+#flash-sales .arrow.next-arrow{
+    right: 20px;
+    top: -70px;
 }

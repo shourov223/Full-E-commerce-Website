@@ -1,7 +1,5 @@
 import { SlArrowRight } from 'react-icons/sl'
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import imgaeOne from "../assets/image-one.jpg"
 import { Link } from 'react-router';
 import { FaArrowRightLong } from 'react-icons/fa6';
@@ -36,7 +34,7 @@ const Banner = () => {
     return (
         <>
             <section>
-                <div className="container mx-auto px-4">
+                <div className="container">
                     <div className='lg:grid lg:grid-cols-[233px_1fr] pt-6 lg:pt-10 gap-4'>
                         {/* Categories Menu - Hidden on mobile, shown on desktop */}
                         <div className='hidden lg:block pr-4 border-r'>

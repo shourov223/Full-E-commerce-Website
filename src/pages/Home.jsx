@@ -1,5 +1,7 @@
 import Banner from "../components/Banner"
-import Products from "../components/Products"
+import BestSelling from "../components/BestSelling"
+import Category from "../components/Category"
+import FlashSales from "../components/FlashSales"
 import SectionHeading from "../components/SectionHeading"
 
 
@@ -7,8 +9,9 @@ const Home = () => {
     return (
         <>
             <Banner/>
-            <SectionHeading subHeading={"Today’s"} heading={"Flash Sales"} counter={true} buttons={true}/>
-            <Products />
+            <FlashSales />
+            <Category/>
+            <BestSelling/>
         </>
     )
 }
