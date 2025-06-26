@@ -47,7 +47,7 @@ const TopBar = () => {
                             {' '}
                             <Link 
                                 className='font-bold underline hover:text-yellow-300 transition-colors duration-200 ml-1' 
-                                to="/Error"
+                                to="/ProductPage"
                             >
                                 ShopNow
                             </Link>

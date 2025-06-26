@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa6"
 import { CiHeart } from "react-icons/ci"
 import { GoEye } from "react-icons/go"
+import StarRating from "./StarRating"
 
 
 const ProductsItems = ({ image, text, price, oldPrice, reting, discountParcent, discount = false }) => {
@@ -26,13 +27,7 @@ const ProductsItems = ({ image, text, price, oldPrice, reting, discountParcent, 
                     <del className="text-base font-medium leading-[24px]">{oldPrice}</del>
                 </div>
                 <div className="flex items-center gap-2">
-                    <ul className="flex items-center">
-                        <li><FaStar className="text-[#FFAD33]" /></li>
-                        <li><FaStar className="text-[#FFAD33]" /></li>
-                        <li><FaStar className="text-[#FFAD33]" /></li>
-                        <li><FaStar className="text-[#FFAD33]" /></li>
-                        <li><FaStar className="text-[#FFAD33]" /></li>
-                    </ul>
+                    <StarRating rating={reting}/>
                     <p className="text-[14px] font-semibold leading-[21px]">{reting}</p>
                 </div>
             </div>

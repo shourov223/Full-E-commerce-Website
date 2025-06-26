@@ -44,9 +44,13 @@ const UserProvider = ({ children }) => {
             alert('email not match')
         }
     }
+    const [color, setColor] = useState(false)
+    const handleColor = () => {
+        setColor(!color)
+    }
 
     return (
-        <UserContext.Provider value={{ currentUser, setCurrentUser, addUser }}>
+        <UserContext.Provider value={{ currentUser, setCurrentUser, addUser, color, setColor, handleColor }}>
             {children}
         </UserContext.Provider>
     )

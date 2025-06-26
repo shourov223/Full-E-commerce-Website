@@ -13,8 +13,8 @@ const BestSelling = () => {
         <section className='pt-20'>
             <div className="container">
                 <SectionHeading heading={"Best Selling Products"} subHeading={"This Month"} />
-                <div className='grid grid-cols-4 gap-[30px] pt-[60px]'>
-                    {products?.map((items, i) => {
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-[30px] pt-[60px]'>
+                    {products?.slice(0,4).map((items) => {
                         return <ProductsItems image={items.thumbnail} text={items.title} discountParcent={items.discountPercentage} discount={true} reting={items.rating} price={items.price} key={items.id}/>
                     })}
                 </div>

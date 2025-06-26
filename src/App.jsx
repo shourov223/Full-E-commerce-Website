@@ -4,6 +4,7 @@ import MainLayout from "./Layout/MainLayout"
 import Signup from "./pages/Signup"
 import Login from "./pages/Login"
 import Error from "./pages/Error"
+import ProductPage from "./pages/ProductPage"
 
 
 const App = () => {
@@ -12,10 +13,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index={true} element={<Home />} />
-          <Route path="/signup" element={<Signup/>}/>
-          <Route path="/Login" element={<Login/>}/>
-          <Route path="*" element={<Error/>}/>
-          
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="*" element={<Error />} />
+          <Route path="/ProductPage" element={<ProductPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router"
+import { useUser } from "../context/userContext";
 
 // Custom Menu Icon Component
 const MenuIcon = ({ className, isOpen }) => (
@@ -40,6 +41,7 @@ const Navbar = () => {
         { name: "About", path: "#" },
         { name: "Sign Up", path: "/SignUp" }
     ]
+    const {handleColor} = useUser()
 
     return (
         <>
@@ -109,6 +111,7 @@ const Navbar = () => {
                                 <MenuIcon className="text-gray-700" isOpen={showMenu} />
                             </button>
                         </div>
+                        {/* <button onClick={handleColor} className="bg-red-400 py-[10px] px-[30px] rounded-2xl cursor-pointer text-white">ThemeChange</button> */}
                     </div>
 
                     {/* Mobile Search Bar */}

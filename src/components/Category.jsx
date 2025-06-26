@@ -165,7 +165,7 @@ const Category = () => {
 
     return (
         <section className="pt-12 md:pt-16 lg:pt-20">
-            <div className="container px-4 md:px-6 lg:px-8">
+            <div className="container">
                 <div className="flex items-center justify-between">
                     <SectionHeading heading={"Browse By Category"} subHeading={"Categories"} />
                     <div className="flex items-center gap-2">
