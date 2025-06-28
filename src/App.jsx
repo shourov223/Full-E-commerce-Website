@@ -5,6 +5,7 @@ import Signup from "./pages/Signup"
 import Login from "./pages/Login"
 import Error from "./pages/Error"
 import ProductPage from "./pages/ProductPage"
+import Wishlist from "./pages/Wishlist"
 
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index={true} element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/Login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<Error />} />
-          <Route path="/ProductPage" element={<ProductPage />} />
+          <Route path="/productPage" element={<ProductPage />} />
+          <Route path="/wishlist" element={<Wishlist/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

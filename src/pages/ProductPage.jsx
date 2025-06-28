@@ -54,7 +54,8 @@ const ProductPage = () => {
 
                     {/* Products */}
                     <div>
-                        <div className="flex justify-end">
+                        <div className="flex justify-end items-center gap-3 pb-[30px]">
+                            <p className="text-[16px] leading-[24px]">Show : </p>
                             <input onChange={(e) => showNumberOfProduct(e)} className="border border-gray-600 p-2" type="number" placeholder="0" />
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
@@ -70,6 +71,12 @@ const ProductPage = () => {
                                     reting={rating}
                                 />
                             ))}
+                        </div>
+                        <div className="pt-12 flex items-center gap-4">
+                            <Link className="py-[10px] px-[25px] bg-black text-white">1</Link>
+                            <Link className="py-[10px] px-[25px] bg-black text-white">2</Link>
+                            <Link className="py-[10px] px-[25px] bg-black text-white">3</Link>
+                            <Link className="py-[10px] px-[25px] bg-black text-white">4</Link>
                         </div>
                     </div>
                 </div>
