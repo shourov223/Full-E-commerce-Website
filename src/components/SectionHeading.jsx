@@ -1,4 +1,4 @@
-import CountdownTimer from "./CountdownTimer"
+import CountdownTimer from "./CountDownTimer.jsx"
 
 const SectionHeading = ({ subHeading, heading, counter = false }) => {
     return (
