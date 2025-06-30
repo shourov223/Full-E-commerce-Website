@@ -48,9 +48,13 @@ const UserProvider = ({ children }) => {
     const handleColor = () => {
         setColor(!color)
     }
+    const [value, setValue] = useState("")
+    const handleChange = (e) => {
+        setValue(e.target.value)
+    }
 
     return (
-        <UserContext.Provider value={{ currentUser, setCurrentUser, addUser, color, setColor, handleColor }}>
+        <UserContext.Provider value={{ currentUser, setCurrentUser, addUser, color, setColor, handleColor, value, handleChange }}>
             {children}
         </UserContext.Provider>
     )

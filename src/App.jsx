@@ -6,6 +6,8 @@ import Login from "./pages/Login"
 import Error from "./pages/Error"
 import ProductPage from "./pages/ProductPage"
 import Wishlist from "./pages/Wishlist"
+import Cart from "./pages/Cart"
+import BillingDetails from "./pages/BillingDetails"
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
           <Route path="*" element={<Error />} />
           <Route path="/productPage" element={<ProductPage />} />
           <Route path="/wishlist" element={<Wishlist/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+          <Route path="/billingdetails" element={<BillingDetails/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
